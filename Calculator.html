@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="inputs" placeholder="0">
+
+        <div class="buttons">
+            <!-- Utility functions -->
+            <button type="button">MC</button>
+            <button type="button">MR</button>
+            <button type="button">M+</button>
+            <button type="button">M-</button>
+            <button type="button">MS</button>
+            <button type="button" onclick="Del()">CE</button>
+            <button type="button" onclick="Clear()">C</button>
+            <button type="button">±</button>
+            <button type="button">√</button>
+            <!-- Numerals -->
+            <button type="button" onclick="Calculator(7)">7</button>
+            <button type="button" onclick="Calculator(8)">8</button>
+            <button type="button" onclick="Calculator(9)">9</button>
+            <button type="button" onclick="Calculator('/')">÷</button>
+            <button type="button" onclick="Calculator(4)">4</button>
+            <button type="button" onclick="Calculator(5)">5</button>
+            <button type="button" onclick="Calculator(6)">6</button>
+            <button  type="button" onclick="Calculator('*')">×</button>
+            <button type="button" onclick="Calculator(1)">1</button>
+            <button type="button" onclick="Calculator(2)">2</button>
+            <button type="button" onclick="Calculator(3)">3</button>
+            <button type="button" onclick="Calculator('-')">-</button>
+            <button  type="button" onclick="Calculator(0)">0</button>
+            <button type="button" onclick="Calculator('.')">.</button>
+            <button type="button" onclick="Calculator(1)">1/x</button>
+            <button type="button" onclick="Calculator('+')">+</button>
+            <!-- Other operations -->
+            <button type="button" onclick="Calculator('%')">%</button>
+            <button type="button" class="equal" onclick="Results('=')">=</button>
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+   
+</body>
+</html>
